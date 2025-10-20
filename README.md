@@ -28,14 +28,15 @@ Although highly valuable for banks, NMDs are inherently risky. Their behaviour m
 Usual statistical tests (such as unit root tests and non-autocorrelation test) were performed throughout the whole thesis at several steps, with eventual treatment if needed. 
 
 ## Measuring the pass-through rate and Forecasting the offered rate 
-The pass-through rate **measures the sensitivity of the offered rate to changes in a market reference rate** (e.g. EURIBOR 3M). It needs modeling because it directly impacts the deposit outflows (if the remuneration rate decreases, clients are likely to withdraw their deposits). To do so, we tested several specifications, finally settling on a **error-correction model** between the offered rate and the EURIBOR 12M:
-$$
-\Delta r_{\text{offered}, t} = \alpha + \beta \Delta EUR_{12M,t} + \gamma (r_{\text{offered}, t-1} - a - b EUR_{12M, t-1}) + u_t
-$$
-with : 
-- $\beta$ the short-run pass-through rate,
-- $b$ the long-run pass-through rate,
-- $\gamma$ the adjustment rate / mean-reversion speed.
+
+The pass-through rate **measures the sensitivity of the offered rate to changes in a market reference rate** (e.g. EURIBOR 3M). It needs modeling because it directly impacts the deposit outflows. To do so, we tested several specifications, finally settling on an **error-correction model** between the offered rate and the EURIBOR 12M:
+
+![ECM equation](https://latex.codecogs.com/svg.image?\Delta%20r_{\text{offered},t}%20=%20\alpha%20+%20\beta%20\Delta%20EUR_{12M,t}%20+%20\gamma%20(r_{\text{offered},t-1}%20-%20a%20-%20b%20EUR_{12M,t-1})%20+%20u_t)
+
+with:
+- $\beta$: short-run pass-through rate  
+- $b$: long-run pass-through rate  
+- $\gamma$: adjustment rate / mean-reversion speed  
 
 To have a single value, our proposal is to combine both short-run and long-run pass-through rate, weighted by the adjustment coefficient. 
 
@@ -96,7 +97,7 @@ This method allows for better prediction, as one could run several Kalman filter
 
 Doing this, we see that the weights given to faster adjustment models increase dramatically during rupture periods, like in 2012 or, more so, in 2022. Using this TVP-VAR DMA approach, we finally obtain forecasts for the yield curve. 
 
-![Console Output](images/Chapitre 3 - Projection des taux/Projection baseline.png)
+Those projections can be found in the ``images/Chapitre 3`` folder. 
 
 ## Forecasting the rate margin and sensitivity measure
 To compute the rate of a given part of the outstandings (stable, fluctuating,...), we need to make the strong assumption that **outstandings are constant**. As the part is dynamically renewed, the remuneration rate (corresponding to the market rate for its maturity, as the bank can place the liquidity on the market) corresponds to a weighted mean of the former remuneration rate (portion already placed and not renewed) and the new market rate (portion renewed of the total part). 
