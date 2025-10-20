@@ -34,9 +34,6 @@ The pass-through rate **measures the sensitivity of the offered rate to changes 
 ```math
 \Delta r_{\text{offered}, t} = \alpha + \beta \Delta EUR_{12M,t} + \gamma (r_{\text{offered}, t-1} - a - b EUR_{12M, t-1}) + u_t
 ```
-
-
-
 with:
 - $\beta$: short-run pass-through rate  
 - $b$: long-run pass-through rate  
@@ -76,25 +73,25 @@ Finally, the share of total oustandings left (neither stable, variable nor conce
 ## Forecasting the yield curve: a Dynamic Nelson-Siegel approach
 ### Classic fixed coefficient approaches
 To forecast the yield curve, we decided to use the Nelson-Siegel factor model. Following Diebold & Li (2006), we forecast the terms structure by **forecasting the Nelson-Siegel factors**. Formally, we estimate:
-$$
+```math
 r_t(\tau) = \underbrace{\beta_{1t}}_{\text{level}} + \underbrace{\beta_{2t}}_{\text{slope}} \left(\frac{1 - e^{-\lambda_t \tau}}{\lambda_t \tau} \right) + \underbrace{\beta_{3t}}_{\text{curvature}} \left(\frac{1 - e^{-\lambda_t \tau}}{\lambda_t \tau} - e^{-\lambda_t \tau} \right), 
-$$
+```
 then use **AR(1) models and a VAR(1)** on the factors to forecast them. However, we find that the stationarity of the factors is not clear, and performing the **Johansen cointegration test** reveals the presence of one cointegration relationship. Thus, we estimate a VECM model and see that, on average, its forecast RMSE is lower. 
 
 ### Time-Varying Parameters VAR
 To account for the potential **structural breaks** in factors' relationships (for instance, after 2022 and the new restrictive monetary policy regime in the Euro Area), we adopt a TVP-VAR model, following the **Koop & Korobilis (2013) method**. To summarise, the TVP-VAR can be written as a state-space model:
-$$
+```math
 B_{t} = M_t B_{t-1} + C_t + v_t, v_t \sim N(0, Q_t) \ \text{(Transition equation)} 
-$$
-$$
+```
+```math
   \beta_t = B_{\textbf{t}} \beta_{t-1}  + D_t + w_t, w_t \sim N(0, H_t) \ \text{(Measurement equation)} 
-$$
+```
 with $B_t$ the **unobserved coefficients** of the TVP-VAR and $\beta_t$ the "observed" Nelson-Siegel factors.
 
 Predictions are obtained using the Kalman filter. We implement the Koop and Korobilis method of recursive updating of the coefficient variance matrix using a **forgetting factor** $\lambda \in ]0,1]$. After some calculations, they write that: 
-$$
+```math
 Q_t = \left(\frac{1}{\lambda} - 1\right) Var(B_t | \beta_{1:t-1}),
-$$
+```
 thus allowing for an interpretation of the forgetting factor coefficient: the closer it is to one, the slower coefficients adjust; the smaller $\lambda$ is, the faster coefficients adapt to new information. 
 
 This method allows for better prediction, as one could run several Kalman filters in parallel with different $\lambda$ values, and combine the predictions by weighted averaging. In fact, the **Dynamic Model Averaging approach** we used to weight each prediction by the probability that the model with a particular $\lambda$ is the "good" model. Without going into details, this probability is recursively updated from likelihood ratios.
@@ -111,9 +108,9 @@ To compute the offered client rate, we use the ECM from earlier. The interest ra
 We then forecast yield curves for different market stress scenarios: upward/downward shocks on short-term/long-term interest rates and parallel shocks. We also modify the runoff model estimated parameters to have shorter or longer models, sensitive or less sensitive ones. Obviously, we also keep a "baseline" scenario without any shocks and the real model estimated previously. 
 
 We then compute the interest rate margin for each of the five models in each of the six market scenarios, and run an ANOVA test on the model: 
-$$
+```math
 Margin_{ij} = c + \underbrace{\alpha_i}_{\text{Model effect}} + \underbrace{\gamma_j}_{\text{Market rate effect}}  + \underbrace{{\alpha\gamma}_{ij}}_{\text{Interaction effect}} + \varepsilon_{ijk}
-$$
+```
 The results show that if the market rate effect is prevalent, the interaction effect is still statistically significant. 
 
 ## Project organisation 
