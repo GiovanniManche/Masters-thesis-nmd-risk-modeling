@@ -31,7 +31,9 @@ Usual statistical tests (such as unit root tests and non-autocorrelation test) w
 
 The pass-through rate **measures the sensitivity of the offered rate to changes in a market reference rate** (e.g. EURIBOR 3M). It needs modeling because it directly impacts the deposit outflows. To do so, we tested several specifications, finally settling on an **error-correction model** between the offered rate and the EURIBOR 12M:
 
-![ECM](https://latex.codecogs.com/svg.image?\dpi{120}\bg_white\Delta%20r_{\text{offered},t}%20=%20\alpha%20+%20\beta%20\Delta%20EUR_{12M,t}%20+%20\gamma%20(r_{\text{offered},t-1}%20-%20a%20-%20b%20EUR_{12M,t-1})%20+%20u_t)
+```math
+\Delta r_{\text{offered}, t} = \alpha + \beta \Delta EUR_{12M,t} + \gamma (r_{\text{offered}, t-1} - a - b EUR_{12M, t-1}) + u_t
+```
 
 
 
