@@ -17,6 +17,7 @@ This repository contains the code developed for my master’s thesis in the MSc 
 - [Forecasting the yield curve: a Dynamic Nelson-Siegel approach](#forecasting-the-yield-curve-a-dynamic-nelson-siegel-approach)
 - [Forecasting the rate margin and sensitivity measure](#forecasting-the-rate-margin-and-sensitivity-measure)
 - [Project organisation](#project-organisation)
+- [References](#references)
 
 ## Description 
 Non-maturity deposits represent a major source of risk for banks, as they entail both **liquidity risk** and  **interest rate risk** (and those two dimensions are themselves interlinked). Because NMDs have **no contractual maturity**, clients can *technically* withdraw their funds overnight. However, in return, these deposits often are the **cheapest source of funding** for a bank, as they are either non-remunerated or remunerated at rates well below market levels. 
