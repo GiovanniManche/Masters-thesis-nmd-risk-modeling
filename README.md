@@ -143,9 +143,9 @@ The results show that if the market rate effect is prevalent, the interaction ef
 - **Lorenz, M. O. (1905)**. *Methods of measuring the concentration of wealth*.
 *American Statistical Association*, 9, 209–219.
 
-- **Banque de France. (2025)**. Agrégats monétaires France, M2, Comptes sur livrets [taux de croissance trimestriel annualisé] (CVS-CJO).
+- **Banque de France. (2025)**. *Agrégats monétaires France, M2, Comptes sur livrets [taux de croissance trimestriel annualisé] (CVS-CJO)*.
 https://webstat.banque-france.fr/fr/catalogue/bsi1/BSI1.M.FR.Y.V.L23.D.I.U6.2300.Z01.3
- — consulté le 31 mai 2025.
+ — accessed on May 31, 2025.
 
 - **European Banking Authority**. (2022). *Final Report – Guidelines on the Management of Interest Rate Risk and Credit Spread Risk arising from Non-Trading Book Activities (EBA/GL/2022/14)*.
 https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-management-interest-rate-risk-and-credit-spread-risk
