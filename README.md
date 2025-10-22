@@ -119,3 +119,47 @@ The results show that if the market rate effect is prevalent, the interaction ef
 - ``écoulement`` folder contains different functions used to model the non-maturity deposit runoff (regressions mostly) that are then used in the main Notebook. There are also two Excel files used to show *manually* how the dynamic runoff and renewal actually work. *Granular data used for the model estimation is confidential and cannot be made available.*
 - ``Main.ipynb`` file is the notebook that contains all the details and progressive explanations and results. 
 - A Beamer presentation (in French) is also available.
+
+---
+## References
+- **Byrne, J. P., Cao, S., & Korobilis, D.** (2017). *Forecasting the term structure of government bond yields in unstable environments*.
+*Journal of Empirical Finance*, 44, 209–225.
+
+- **Nelson, C. R., & Siegel, A. F.** (1987). *Parsimonious modeling of yield curve*.
+*Journal of Business*, 60, 473–489.
+
+- **Diebold, F. X., & Li, C.** (2006). *Forecasting the term structure of government bond yields*.
+*Journal of Econometrics*, 130, 337–364.
+
+- **Koop, G., & Korobilis, D. (2013)**. *Large time-varying parameter VARs*.
+*Journal of Econometrics*, 177, 185–198.
+
+- **Koop, G., & Korobilis, D. (2012)**. *Forecasting inflation using dynamic model averaging*.
+*International Economic Review*, 53 (August).
+
+- **Parzen, E. (1962)**. *On Estimation of a Probability Density Function and Mode*.
+*The Annals of Mathematical Statistics*, 33(3), 1065–1076.
+
+- **Lorenz, M. O. (1905)**. *Methods of measuring the concentration of wealth*.
+*American Statistical Association*, 9, 209–219.
+
+**Banque de France. (2025)**. Agrégats monétaires France, M2, Comptes sur livrets [taux de croissance trimestriel annualisé] (CVS-CJO).
+\url{https://webstat.banque-france.fr/fr/catalogue/bsi1/BSI1.M.FR.Y.V.L23.D.I.U6.2300.Z01.3}
+ — consulté le 31 mai 2025.
+
+European Banking Authority. (2022). Final Report – Guidelines on the Management of Interest Rate Risk and Credit Spread Risk arising from Non-Trading Book Activities (EBA/GL/2022/14).
+🔗 EBA Website
+ — applicable from 30 June 2023.
+
+DPF/ALM/MD. (2023). Méta-modèle – convention d’écoulement des produits non échéancés.
+Crédit Agricole S.A.
+
+Ielpo, F., Merhy, C., & Simon, G. (2017). Engineering Investment Process: Making Value Creation Repeatable.
+ISTE Press Ltd & Elsevier Ltd.
+
+Coface. (2023, 13 mars). La faillite de Silicon Valley Bank met en évidence des risques accrus pour la stabilité financière dans un contexte de resserrement monétaire.
+
+Le Monde. (2023, 11 mars). La fermeture de la Silicon Valley Bank, plus grosse faillite bancaire depuis la crise de 2008.
+
+Tampereau, Y. (Caisse des Dépôts et Consignations). (2023, 21 février). Épargne des ménages : après la sur-épargne covid, quelle normalisation ? Quelles perspectives ?
+🔗 Caisse des Dépôts – Blog
