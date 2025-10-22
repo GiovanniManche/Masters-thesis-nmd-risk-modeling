@@ -154,9 +154,9 @@ https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-m
 - **Ielpo, F., Merhy, C., & Simon, G**. (2017). *Engineering Investment Process: Making Value Creation Repeatable*.
 *ISTE Press Ltd & Elsevier Ltd*.
 
-**Coface. (2023, March 13)**. *La faillite de Silicon Valley Bank met en évidence des risques accrus pour la stabilité financière dans un contexte de resserrement monétaire.*
+- **Coface. (2023, March 13)**. *La faillite de Silicon Valley Bank met en évidence des risques accrus pour la stabilité financière dans un contexte de resserrement monétaire.*
 
-**Le Monde. (2023, March 11)**. *La fermeture de la Silicon Valley Bank, plus grosse faillite bancaire depuis la crise de 2008.*
+- **Le Monde. (2023, March 11)**. *La fermeture de la Silicon Valley Bank, plus grosse faillite bancaire depuis la crise de 2008.*
 
-**Tampereau, Y. (Caisse des Dépôts et Consignations)**. (2023, February 21). *Épargne des ménages : après la sur-épargne covid, quelle normalisation ? Quelles perspectives ?*
+- **Tampereau, Y. (Caisse des Dépôts et Consignations)**. (2023, February 21). *Épargne des ménages : après la sur-épargne covid, quelle normalisation ? Quelles perspectives ?*
 https://www.caissedesdepots.fr/blog/article/apres-la-sur-epargne-covid-normalisation-et-perspectives
