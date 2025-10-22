@@ -143,23 +143,20 @@ The results show that if the market rate effect is prevalent, the interaction ef
 - **Lorenz, M. O. (1905)**. *Methods of measuring the concentration of wealth*.
 *American Statistical Association*, 9, 209–219.
 
-**Banque de France. (2025)**. Agrégats monétaires France, M2, Comptes sur livrets [taux de croissance trimestriel annualisé] (CVS-CJO).
-\url{https://webstat.banque-france.fr/fr/catalogue/bsi1/BSI1.M.FR.Y.V.L23.D.I.U6.2300.Z01.3}
+- **Banque de France. (2025)**. Agrégats monétaires France, M2, Comptes sur livrets [taux de croissance trimestriel annualisé] (CVS-CJO).
+https://webstat.banque-france.fr/fr/catalogue/bsi1/BSI1.M.FR.Y.V.L23.D.I.U6.2300.Z01.3
  — consulté le 31 mai 2025.
 
-European Banking Authority. (2022). Final Report – Guidelines on the Management of Interest Rate Risk and Credit Spread Risk arising from Non-Trading Book Activities (EBA/GL/2022/14).
-🔗 EBA Website
+- **European Banking Authority**. (2022). *Final Report – Guidelines on the Management of Interest Rate Risk and Credit Spread Risk arising from Non-Trading Book Activities (EBA/GL/2022/14)*.
+https://www.eba.europa.eu/regulation-and-policy/internal-governance/guidelines-management-interest-rate-risk-and-credit-spread-risk
  — applicable from 30 June 2023.
 
-DPF/ALM/MD. (2023). Méta-modèle – convention d’écoulement des produits non échéancés.
-Crédit Agricole S.A.
+- **Ielpo, F., Merhy, C., & Simon, G**. (2017). *Engineering Investment Process: Making Value Creation Repeatable*.
+*ISTE Press Ltd & Elsevier Ltd*.
 
-Ielpo, F., Merhy, C., & Simon, G. (2017). Engineering Investment Process: Making Value Creation Repeatable.
-ISTE Press Ltd & Elsevier Ltd.
+**Coface. (2023, March 13)**. *La faillite de Silicon Valley Bank met en évidence des risques accrus pour la stabilité financière dans un contexte de resserrement monétaire.*
 
-Coface. (2023, 13 mars). La faillite de Silicon Valley Bank met en évidence des risques accrus pour la stabilité financière dans un contexte de resserrement monétaire.
+**Le Monde. (2023, March 11)**. *La fermeture de la Silicon Valley Bank, plus grosse faillite bancaire depuis la crise de 2008.*
 
-Le Monde. (2023, 11 mars). La fermeture de la Silicon Valley Bank, plus grosse faillite bancaire depuis la crise de 2008.
-
-Tampereau, Y. (Caisse des Dépôts et Consignations). (2023, 21 février). Épargne des ménages : après la sur-épargne covid, quelle normalisation ? Quelles perspectives ?
-🔗 Caisse des Dépôts – Blog
+**Tampereau, Y. (Caisse des Dépôts et Consignations)**. (2023, February 21). *Épargne des ménages : après la sur-épargne covid, quelle normalisation ? Quelles perspectives ?*
+https://www.caissedesdepots.fr/blog/article/apres-la-sur-epargne-covid-normalisation-et-perspectives
